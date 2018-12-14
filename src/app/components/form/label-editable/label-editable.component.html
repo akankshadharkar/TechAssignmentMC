@@ -1,0 +1,7 @@
+<div class="edt-txt" *ngIf="txt && !isEditing" (click)="akuClick()">
+	<!-- {{valType}}: -->{{txt}}
+</div>
+
+<div *ngIf="isEditing">
+	<input #box [(ngModel)]="txt" (keyup.enter)="onEnter(box.value)" >
+</div>

@@ -1,0 +1,13 @@
+<!-- <img src="/assets/mock-data/img/mri.jpg">
+<img src="/assets/mock-data/img/bldreport.png">
+<img src="/assets/mock-data/img/prescription.jpg">
+<img src="/assets/mock-data/img/xray.jpg"> -->
+
+<div class="reports">
+	<div class="single-report" *ngFor = "let singleReport of reports" [class.aku-class]="singleReport === selectedReport" >
+
+		<p class="p-select" (click)="reportWasSelected(singleReport)">
+  			{{singleReport.id}} = {{singleReport.type}}
+		</p>
+	</div>
+</div>

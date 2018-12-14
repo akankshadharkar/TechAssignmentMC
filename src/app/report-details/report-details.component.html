@@ -1,0 +1,11 @@
+
+<h2 *ngIf="report"> Selected Report -> {{report.type}}</h2>
+
+<div *ngIf="report" >
+	<app-label-editable [txt]="report.id" [valType]="'id'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
+	<app-label-editable [txt]="report.type" [valType]="'type'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
+</div>
+
+<div class="close-me" (click)="closeReport()">
+	X
+</div>
