@@ -1,8 +1,8 @@
-<div class="edt-txt" *ngIf="txt && !isEditing" (click)="akuClick()">
+<div class="edt-txt" *ngIf="txt && !isEditing" (click)="inputClick()">
 	<!-- {{valType}}: -->{{txt}}
 	 <span class="tooltiptext">Click to Edit </span>
 </div>
 
 <div *ngIf="isEditing">
-	<input #box [(ngModel)]="txt" (keyup.enter)="onEnter(box.value)" >
+	<input class="edt-inp" #box [(ngModel)]="txt" (keyup.enter)="onEnter(box.value)" >
 </div>

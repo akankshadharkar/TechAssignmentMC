@@ -16,10 +16,6 @@ export class ImgViewerComponent implements OnInit {
 	selectedReport: ImgFile;
   newtxt: TextEditable;
 
-  /*ankName = 'Ankush';
-  ankReportType =  'Blood Report';
-  ankID = 'abcdef';
-*/
   constructor() { }
   ngOnInit() {}
 
@@ -28,19 +24,10 @@ export class ImgViewerComponent implements OnInit {
 
     this.iSelectedAReport.emit(sReport);
 
-    let dataVal = {};
-    dataVal['val'] = sReport.id;
-
-    this.newtxt = dataVal;
+    this.newtxt =  sReport.id;
   }
 
   changeSelectedVal(val){
-    //alert(val);
     this.selectedReport.id = val;
   }
-/*
-  akuClick(){
-    alert(this.ankName);
-  }
-*/
 }

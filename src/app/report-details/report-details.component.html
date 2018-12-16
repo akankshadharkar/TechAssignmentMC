@@ -1,16 +1,63 @@
+<div class="report-header">
 
-<h2 *ngIf="report"> Selected Report -> {{report.type}}</h2>
+	<div class="close-me" (click)="closeReport()">
+		< Back
+	</div>
 
-<div class="dataDiv" *ngIf="report" >
-	Sample ID: <app-label-editable [txt]="report.id" [valType]="'id'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
+	<h1 *ngIf="report" class="view-header"> Selected Report > {{report.type}}</h1>
 
-	<br>
-	
-	Sample Type: <app-label-editable [txt]="report.type" [valType]="'type'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
 </div>
 
-<br>
-<br>
-<div class="close-me" (click)="closeReport()">
-	<--	Back
+<div class="report-main" *ngIf="report" >
+
+	<div class="img-wrapper">
+		<a href={{report.src}} target="_blank">
+			<img class="med-img" [src] = "report.src" >
+		</a>
+	</div>
+
+	<div class="data-wrapper">
+		Sample ID:
+		<app-label-editable
+			[txt]="report.id"
+			[valType]="'id'"
+			(valWasChanged)="textWasChanged($event)" >
+		</app-label-editable>
+		<br>
+		Sample Type:
+		<app-label-editable
+			[txt]="report.type"
+			[valType]="'type'"
+			(valWasChanged)="textWasChanged($event)" >
+		</app-label-editable>
+		<br>
+		Sample ID:
+		<app-label-editable
+			[txt]="report.patientName"
+			[valType]="'patientName'"
+			(valWasChanged)="textWasChanged($event)" >
+		</app-label-editable>
+		<br>
+		Sample Type:
+		<app-label-editable
+			[txt]="report.patientID"
+			[valType]="'patientID'"
+			(valWasChanged)="textWasChanged($event)" >
+		</app-label-editable>
+		<br>
+		Sample ID:
+		<app-label-editable
+			[txt]="report.docAssigned"
+			[valType]="'docAssigned'"
+			(valWasChanged)="textWasChanged($event)" >
+		</app-label-editable>
+		<br>
+		Sample Type:
+		<app-label-editable
+			[txt]="report.doa"
+			[valType]="'doa'"
+			(valWasChanged)="textWasChanged($event)" >
+		</app-label-editable>
+		<br>
+	</div>
 </div>

@@ -14,21 +14,18 @@ export class AppComponent {
 
   reports = REPORTS;
 
-  ankImg: "https://i.pinimg.com/280x280_RS/74/b5/37/74b5375155de22a4ed23ab07de2700ed.jpg"
-
   reportWasSelected(sReport){
     this.selectedReport = sReport;
   }
 
   reportWasChanged(data){
-    console.log(data);
+
     let currID = this.selectedReport.id;
     if(currID){
       var idx = this.reports.findIndex(r => r.id == currID )
       let currReport = this.reports[idx];
-      currReport[data.valType] = data.val;
 
-      this.closeReport(true);
+      currReport[data.type] = data.val;
     }
   }
 

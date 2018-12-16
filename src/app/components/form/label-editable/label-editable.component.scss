@@ -1,10 +1,15 @@
 .edt-txt{
+	cursor: pointer;
 	border: 1px dotted black;
 	margin: 20px;
 	color: #ffffff;
 	background-color: #05939D;
 	display: inline;
 	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+.edt-inp{
+	font-size: 30px;
 }
 
 .edt-txt .tooltiptext {
@@ -25,4 +30,5 @@
 
 .edt-txt:hover .tooltiptext {
   visibility: visible;
+	opacity: 0.5;
 }

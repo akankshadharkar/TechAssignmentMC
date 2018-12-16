@@ -22,7 +22,7 @@ export class LabelEditableComponent implements OnInit {
   ngOnInit() {
   }
 
-  akuClick(){
+  inputClick(){
   	this.isEditing = true;
   }
 
@@ -30,9 +30,10 @@ export class LabelEditableComponent implements OnInit {
   	this.txt = value;
   	this.isEditing = false;
 
-    let dataObj = {};
+    let dataObj =  new TextEditable();
+
     dataObj.val = this.txt;
-    dataObj.valType = this.valType;
+    dataObj.type = this.valType;
 
     this.retData = dataObj;
   	this.valWasChanged.emit(dataObj);

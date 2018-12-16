@@ -1,18 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<div class="imgs-area">
+	<app-img-viewer [reports]="reports" (iSelectedAReport)="reportWasSelected($event)" >
+	</app-img-viewer>
+</div>
 
-<div class="main-container" >
-
-	<div class="imgs-area">
-
-		<h1>Medical Images</h1>
-
-		<app-img-viewer [reports]="reports" (iSelectedAReport)="reportWasSelected($event)" >
-		</app-img-viewer>
-	</div>
-
-	<div class="selected-report-viewer" *ngIf="selectedReport">
-		<app-report-details [report]="selectedReport" (hideReport)="closeReport($event)" (reportChanged)="reportWasChanged($event)">
-		</app-report-details>
-	</div>
-
+<div class="selected-report-viewer" *ngIf="selectedReport">
+	<app-report-details [report]="selectedReport" (hideReport)="closeReport($event)" (reportChanged)="reportWasChanged($event)">
+	</app-report-details>
 </div>

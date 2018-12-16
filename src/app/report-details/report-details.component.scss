@@ -1,12 +1,15 @@
-h2{
-	color: #111;
-	padding: 40px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: .2em;
-	font-weight: 100;
-	font-size: 2rem;
-	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+:host{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+
+	background-color: #B0BEC5;
+}
+
+.report-header{
+	height: 10%;
 }
 
 .close-me{
@@ -16,10 +19,40 @@ h2{
 	display: inline-block;
 	color: #ffffff;
 	text-align: center;
-	margin-right: 10px;
+	margin-right: 100px;
+
+	position: absolute;
+	left: 2%;
 }
 
-.dataDiv{
-	margin: 20px;
+.report-main{
+	position: absolute;
+	height: 90%;
+	width: 100%;
 	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+	padding-top: 50px;
+}
+
+.img-wrapper{
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+}
+
+.data-wrapper{
+	position: absolute;
+	left: 40%;
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+}
+
+.med-img {
+	margin: 10% 0 auto;
+	height: 80%;
+	width: 90%;
+	object-fit: contain;
 }

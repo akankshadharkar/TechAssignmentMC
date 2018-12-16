@@ -2,6 +2,10 @@
 	color: #ffffff;
 }
 
+.medImgs{
+	width: 300px;
+	height: 300px;
+}
 
 .p-select:hover{
 	cursor: pointer;
@@ -19,7 +23,9 @@
 	padding: 20px;
 	margin: auto;
   grid-template-columns: auto auto auto;
+	overflow: auto;
 }
+
 .single-report {
   background-color: #05939D;
 	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
@@ -27,4 +33,5 @@
   padding: 20px;
   font-size: 30px;
   text-align: center;
+	margin: 20px;
 }
