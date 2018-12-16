@@ -26,14 +26,14 @@ export class LabelEditableComponent implements OnInit {
   	this.isEditing = true;
   }
 
-  onEnter(value: string) { 
+  onEnter(value: string) {
   	this.txt = value;
   	this.isEditing = false;
 
     let dataObj = {};
     dataObj.val = this.txt;
     dataObj.valType = this.valType;
-    
+
     this.retData = dataObj;
   	this.valWasChanged.emit(dataObj);
   }

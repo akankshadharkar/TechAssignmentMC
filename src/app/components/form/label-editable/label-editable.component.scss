@@ -1,3 +1,28 @@
 .edt-txt{
-	border: 1px solid brown;
+	border: 1px dotted black;
+	margin: 20px;
+	color: #ffffff;
+	background-color: #05939D;
+	display: inline;
+	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+.edt-txt .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #034f84;
+  color: #fff;
+	font-size: 20px;
+	display: inline;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.edt-txt:hover .tooltiptext {
+  visibility: visible;
 }

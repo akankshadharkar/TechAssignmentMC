@@ -1,8 +1,25 @@
+h2{
+	color: #111;
+	padding: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: 100;
+	font-size: 2rem;
+	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+}
+
 .close-me{
 	font-size: 40px;
-	border: 1px solid purple;
+	background: #FF7B62;
+	border: 4px outset red;
 	display: inline-block;
-	color: red;
-	text-align: right;
+	color: #ffffff;
+	text-align: center;
 	margin-right: 10px;
+}
+
+.dataDiv{
+	margin: 20px;
+	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
 }

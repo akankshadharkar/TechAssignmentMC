@@ -1,11 +1,16 @@
 
 <h2 *ngIf="report"> Selected Report -> {{report.type}}</h2>
 
-<div *ngIf="report" >
-	<app-label-editable [txt]="report.id" [valType]="'id'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
-	<app-label-editable [txt]="report.type" [valType]="'type'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
+<div class="dataDiv" *ngIf="report" >
+	Sample ID: <app-label-editable [txt]="report.id" [valType]="'id'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
+
+	<br>
+	
+	Sample Type: <app-label-editable [txt]="report.type" [valType]="'type'" (valWasChanged)="textWasChanged($event)" ></app-label-editable>
 </div>
 
+<br>
+<br>
 <div class="close-me" (click)="closeReport()">
-	Exit
+	<--	Back
 </div>
